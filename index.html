@@ -6,27 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  background: none; /* remove fixed background */
-  overflow-x: hidden;
-}
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      background: none; /* background handled by parallax div */
+      overflow-x: hidden;
+    }
 
-.parallax-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://github.com/Mason-Soup/Mason-Soup.github.io/blob/main/Untitled.png?raw=true') 
-              no-repeat center center;
-  background-size: cover;
-  transform: translateZ(-1px) scale(2); /* creates depth */
-  z-index: -1;
-}
+    /* Parallax background layer */
+    .parallax-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://github.com/Mason-Soup/Mason-Soup.github.io/blob/main/Untitled.png?raw=true') 
+                  no-repeat center center;
+      background-size: cover;
+      transform: translateZ(-1px) scale(2); /* creates depth effect */
+      z-index: -1;
+    }
+
     .header {
       font-size: 3rem;
       font-weight: bold;
@@ -69,6 +71,9 @@
   </style>
 </head>
 <body>
+  <!-- Parallax background -->
+  <div class="parallax-bg"></div>
+
   <div class="header">z8mc.org</div>
 
   <div class="section">
