@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Website</title>
   <meta charset="UTF-8">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('https://picsum.photos/1920/1080?blur=2') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://picsum.photos/1920/1080?blur=2') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem; /* so content doesn’t touch edges on mobile */
+}
 
-    /* Frosted glass container */
-    .glass {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      padding: 2rem;
-      width: 80%;
-      max-width: 800px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: white;
-    }
+/* Frosted glass container */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;           /* scales with screen */
+  max-width: 1000px;    /* stays readable on big monitors */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
 
-    /* Tab islands inside the glass */
-    .tab {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
+/* Tab islands */
+.tab {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
   </style>
 </head>
 <body>
