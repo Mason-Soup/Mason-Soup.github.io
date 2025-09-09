@@ -3,9 +3,60 @@
 <head>
   <title>My First Website</title>
   <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://picsum.photos/1920/1080?blur=2') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Frosted glass container */
+    .glass {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: white;
+    }
+
+    /* Tab islands inside the glass */
+    .tab {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>Welcome to my very first GitHub Pages website 🎉</p>
+  <div class="glass">
+    <h1>Welcome to My Website</h1>
+    <p>This is my new GitHub Pages site with an Apple-style glass effect ✨</p>
+
+    <div class="tab">
+      <h2>About Me</h2>
+      <p>Write something about yourself here.</p>
+    </div>
+
+    <div class="tab">
+      <h2>Projects</h2>
+      <p>List your cool projects here.</p>
+    </div>
+
+    <div class="tab">
+      <h2>Contact</h2>
+      <p>How people can reach you.</p>
+    </div>
+  </div>
 </body>
 </html>
