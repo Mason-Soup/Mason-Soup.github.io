@@ -25,10 +25,8 @@
     background: url('https://raw.githubusercontent.com/Mason-Soup/Mason-Soup.github.io/main/Images/Background.png') 
               no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* key line for parallax */
     z-index: -1;
     }
-
 
     .header {
       font-size: 3rem;
@@ -154,6 +152,12 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
+</script>
+ <script>
+window.addEventListener('scroll', function() {
+  let scrolled = window.scrollY;
+  document.querySelector('.parallax-bg').style.backgroundPositionY = -(scrolled * 0.3) + 'px';
+});
 </script>
 </body>
 </html>
