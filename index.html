@@ -44,9 +44,11 @@
     }
 
     .gallery img {
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-    }
+  max-width: 100%;       /* never bigger than the container */
+  height: auto;          /* keep aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
 
     /* Frosted glass section */
     .section {
